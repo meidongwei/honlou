@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honlou</title>
+  <link rel="stylesheet" href="./css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="./css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <div class="navbar">
+    <div class="container">
+      <a href="#" class="brand">Brand</a>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="javascript:;" id="dark-mode-toggle">Dark</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      let navbar = document.querySelector('.navbar')
+
+      navbar.classList.toggle("change", window.scrollY > 0)
+
+      // if (window.scrollY > 0) {
+      //   navbar.classList.add("change")
+      // } else {
+      //   navbar.classList.remove("change")
+      // }
+    })
+  </script>
+</body>
+</html>

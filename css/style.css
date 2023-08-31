@@ -1,0 +1,67 @@
+:root {
+  --primary-color: rgb(94, 67, 217);
+}
+
+body {
+  height: 200vh;
+  background: #fff;
+}
+
+html.dark body {
+  background: #000;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  transition: 0.5s;
+}
+
+.navbar > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .brand {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navbar .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.navbar .nav a {
+  margin: 0 10px;
+  font-size: 18px;
+  font-family: 'fangsong';
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.change {
+  padding: 15px 0;
+  background-color: var(--primary-color);
+}
+
+.change .brand,
+.navbar.change a {
+  color: rgb(255, 255, 255);
+}
