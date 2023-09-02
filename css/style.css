@@ -3,7 +3,7 @@
   --bg-black: #000;
   --bg-white: #fff;
   --text-black: #000;
-  --text-white: #cfcfcf;
+  --text-white: #fff;
 }
 
 body {
@@ -41,7 +41,7 @@ html.dark body {
   font-size: 22px;
   font-weight: 900;
   letter-spacing: 1px;
-  color: var(--primary-color);
+  color: var(--text-white);
   text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ html.dark body {
   font-size: 18px;
   font-family: 'fangsong';
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--text-white);
   text-decoration: none;
 }
 
@@ -69,5 +69,5 @@ html.dark body {
 
 .change .brand,
 .navbar.change a {
-  color: rgb(255, 255, 255);
+  color: var(--text-white)
 }
