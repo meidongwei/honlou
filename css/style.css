@@ -1,19 +1,25 @@
 :root {
   --primary-color: rgb(94, 67, 217);
+  --bg-black: #000;
+  --bg-white: #fff;
+  --text-black: #000;
+  --text-white: #cfcfcf;
 }
 
 body {
   height: 200vh;
-  background: #fff;
+  background: var(--bg-white);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--bg-black);
+  }
 }
 
 html.dark body {
-  background: #000;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #000;
-  }
+  background: var(--bg-black);
+  color: var(--text-white);
 }
 
 .navbar {
