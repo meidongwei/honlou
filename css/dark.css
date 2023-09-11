@@ -1,0 +1,28 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--bg-black);
+  }
+  .navbar .brand {
+    color: var(--text-white);
+  }
+  .navbar .nav a {
+    color: var(--text-white);
+  }
+  .home-hero .home-title {
+    color: var(--text-white);
+  }
+}
+
+html.dark body {
+  background: var(--bg-black);
+  color: var(--text-white);
+}
+html.dark .navbar .brand {
+  color: var(--text-white);
+}
+html.dark .navbar .nav a {
+  color: var(--text-white);
+}
+html.dark .home-hero .home-title {
+  color: var(--text-white);
+}
